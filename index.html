@@ -1,0 +1,1401 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff4f8">
+<title>Happy 17th Birthday, Marwa ✨</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet"><style>
+:root {
+    --pink: #e99ab7;
+    --deep-pink: #bd527c;
+    --light-pink: #fff0f5;
+    --cream: #fffaf5;
+    --text: #543746;
+    --muted: #927583;
+    --white: #ffffff;
+    --shadow: 0 18px 55px rgba(153, 75, 108, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+    transition: background .4s, color .4s;
+}
+
+body.dark {
+    --cream: #211923;
+    --light-pink: #302230;
+    --text: #fff0f5;
+    --muted: #c8aab9;
+    --white: #392a38;
+    --shadow: 0 18px 55px rgba(0, 0, 0, .2);
+}
+
+button, input, textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    bottom: -30px;
+    animation: floatUp linear forwards;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: .8;
+    }
+    90% {
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(300deg);
+        opacity: 0;
+    }
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--deep-pink);
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-btn {
+    border: 1px solid rgba(189, 82, 124, .2);
+    background: rgba(255, 255, 255, .65);
+    color: var(--deep-pink);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1.05rem;
+    transition: .25s;
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px);
+    background: var(--light-pink);
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 22px 70px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 213, 229, .65), transparent 28%),
+        radial-gradient(circle at 85% 75%, rgba(246, 218, 232, .7), transparent 30%),
+        linear-gradient(145deg, #fffaf8, #fff0f6 55%, #fff9f1);
+}
+
+body.dark .hero {
+    background:
+        radial-gradient(circle at 15% 20%, #483044, transparent 30%),
+        radial-gradient(circle at 85% 75%, #392738, transparent 35%),
+        linear-gradient(145deg, #211923, #302230);
+}
+
+.hero::before,
+.hero::after {
+    content: "✦";
+    position: absolute;
+    color: rgba(189, 82, 124, .18);
+    font-size: 15rem;
+    font-family: serif;
+    pointer-events: none;
+}
+
+.hero::before {
+    top: 8%;
+    left: -50px;
+}
+
+.hero::after {
+    bottom: 3%;
+    right: -45px;
+    font-size: 12rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.chikoura-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #bd527c;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px rgba(246, 166, 193, .5);
+    animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes sparkle {
+    from {
+        opacity: .75;
+        transform: translateY(0);
+        text-shadow: 0 0 8px rgba(246, 166, 193, .3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-3px);
+        text-shadow: 0 0 20px rgba(246, 166, 193, .8);
+    }
+}
+
+.eyebrow {
+    display: inline-block;
+    border: 1px solid rgba(189, 82, 124, .22);
+    padding: 9px 17px;
+    border-radius: 30px;
+    color: var(--deep-pink);
+    font-size: .75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, .4);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    line-height: 1.08;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.hero h1 em {
+    font-style: italic;
+    color: var(--deep-pink);
+}
+
+.hero-description {
+    max-width: 510px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.age-badge {
+    margin: 28px auto;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(189, 82, 124, .35);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--deep-pink);
+    background: rgba(255, 255, 255, .45);
+    box-shadow: 0 0 0 8px rgba(233, 154, 183, .08);
+}
+
+.age-badge strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.age-badge span {
+    font-size: .65rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.primary-btn {
+    border: none;
+    border-radius: 40px;
+    padding: 15px 27px;
+    background: var(--deep-pink);
+    color: white;
+    box-shadow: 0 10px 25px rgba(189, 82, 124, .2);
+    transition: .3s;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(189, 82, 124, .3);
+}
+
+.scroll-hint {
+    position: absolute;
+    bottom: 22px;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    color: var(--muted);
+    animation: bob 2s infinite;
+}
+
+@keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+/* General sections */
+section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 48px;
+}
+
+.section-heading .small-title {
+    color: var(--deep-pink);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .72rem;
+    margin-bottom: 13px;
+}
+
+.section-heading h2 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* Wish cards */
+.wishes-section {
+    background: var(--cream);
+}
+
+.wish-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.wish-card {
+    background: var(--white);
+    border: 1px solid rgba(189, 82, 124, .12);
+    border-radius: 22px;
+    padding: 30px 24px;
+    min-height: 215px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform .3s, border-color .3s;
+    cursor: pointer;
+}
+
+.wish-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(189, 82, 124, .4);
+}
+
+.wish-card .icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.wish-card h3 {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+}
+
+.wish-card p {
+    font-size: .9rem;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.wish-card .tap {
+    display: block;
+    font-size: .7rem;
+    margin-top: 15px;
+    color: var(--deep-pink);
+    letter-spacing: 1px;
+}
+
+/* Cake */
+.cake-section {
+    text-align: center;
+    background:
+        radial-gradient(circle at center, rgba(255, 224, 236, .6), transparent 55%);
+}
+
+.cake {
+    width: 220px;
+    height: 210px;
+    margin: 20px auto 25px;
+    position: relative;
+}
+
+.cake-plate {
+    position: absolute;
+    width: 220px;
+    height: 15px;
+    bottom: 8px;
+    left: 0;
+    background: #e7b7c9;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(145, 76, 105, .12);
+}
+
+.cake-bottom {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(180deg, #eaa8c1, #d77e9f);
+    border-radius: 12px 12px 20px 20px;
+}
+
+.cake-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    background: #fff0f5;
+    border-radius: 50%;
+}
+
+.cake-top {
+    position: absolute;
+    width: 140px;
+    height: 57px;
+    bottom: 86px;
+    left: 40px;
+    background: linear-gradient(180deg, #f5c8d8, #eaa1bd);
+    border-radius: 12px 12px 15px 15px;
+}
+
+.cake-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #fff5f8;
+    border-radius: 50%;
+}
+
+.candle {
+    position: absolute;
+    width: 10px;
+    height: 42px;
+    bottom: 139px;
+    left: 105px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fff 0 5px,
+        #e98eaf 5px 10px
+    );
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.flame {
+    position: absolute;
+    width: 17px;
+    height: 25px;
+    background: radial-gradient(ellipse at bottom, #ffdf7e 10%, #ff9e4b 60%, #ff7b67);
+    border-radius: 50% 50% 45% 45%;
+    bottom: 177px;
+    left: 101.5px;
+    transform-origin: bottom;
+    animation: flicker .5s infinite alternate;
+    filter: drop-shadow(0 0 8px rgba(255, 165, 70, .5));
+    cursor: pointer;
+}
+
+.flame.off {
+    display: none;
+}
+
+@keyframes flicker {
+    from { transform: rotate(-4deg) scale(1); }
+    to { transform: rotate(4deg) scale(1.08); }
+}
+
+.cake-instruction {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Letter */
+.letter-section {
+    background: var(--light-pink);
+}
+
+.letter {
+    max-width: 760px;
+    margin: auto;
+    padding: clamp(28px, 6vw, 60px);
+    background: var(--white);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.letter::before {
+    content: "♡";
+    position: absolute;
+    top: 16px;
+    right: 23px;
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.letter-label {
+    color: var(--deep-pink);
+    letter-spacing: 3px;
+    font-size: .7rem;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.letter h3 {
+    font-size: 2rem;
+    margin-bottom: 23px;
+}
+
+.letter p {
+    line-height: 2;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+
+.signature {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--deep-pink);
+    margin-top: 25px;
+}
+
+/* Random wish */
+.surprise-section {
+    text-align: center;
+}
+
+.surprise-box {
+    max-width: 650px;
+    margin: auto;
+    background: var(--white);
+    border: 1px solid rgba(189, 82, 124, .15);
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+.surprise-box .star {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#randomWish {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    line-height: 1.6;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* Guestbook */
+.guestbook-section {
+    background: var(--light-pink);
+}
+
+.guestbook {
+    max-width: 650px;
+    margin: auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+}
+
+.guestbook input,
+.guestbook textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(189, 82, 124, .2);
+    border-radius: 12px;
+    background: var(--cream);
+    color: var(--text);
+    margin-bottom: 13px;
+    outline: none;
+}
+
+.guestbook input:focus,
+.guestbook textarea:focus {
+    border-color: var(--pink);
+}
+
+.guestbook textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.guest-messages {
+    margin-top: 25px;
+    display: grid;
+    gap: 12px;
+}
+
+.guest-message {
+    padding: 17px;
+    background: var(--light-pink);
+    border-radius: 13px;
+    overflow-wrap: anywhere;
+}
+
+.guest-message strong {
+    color: var(--deep-pink);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.guest-message p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Final */
+.final-section {
+    text-align: center;
+    padding: 120px 20px;
+    background:
+        radial-gradient(circle at center, rgba(255, 210, 228, .5), transparent 65%);
+}
+
+.final-heart {
+    font-size: 3.5rem;
+    animation: heartbeat 1.3s infinite;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    20% { transform: scale(1.13); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.08); }
+}
+
+.final-section h2 {
+    font-size: clamp(2.3rem, 6vw, 4.5rem);
+    margin-bottom: 20px;
+}
+
+.final-section h2 em {
+    color: var(--deep-pink);
+}
+
+.final-section p {
+    max-width: 530px;
+    margin: 0 auto 28px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    font-size: .8rem;
+    color: var(--muted);
+    border-top: 1px solid rgba(189, 82, 124, .1);
+}
+
+footer span {
+    color: var(--deep-pink);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(40, 20, 33, .55);
+    backdrop-filter: blur(7px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.modal.show {
+    display: flex;
+    animation: fadeIn .25s;
+}
+
+.modal-card {
+    background: var(--white);
+    border-radius: 25px;
+    padding: 40px 28px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, .2);
+    animation: popIn .3s;
+}
+
+.modal-card .modal-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.modal-card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.modal-card p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-size: 1.4rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popIn {
+    from { transform: scale(.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity .7s, transform .7s;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+    section {
+        padding: 75px 6%;
+    }
+
+    .wish-grid {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+    }
+
+    .wish-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .nav-right {
+        gap: 7px;
+    }
+
+    .nav-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    .guestbook {
+        padding: 22px;
+    }
+
+    .chikoura-name {
+        letter-spacing: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style></head><body><div id="particles" aria-hidden="true"></div><nav>
+    <a href="#home" class="logo">M ♡</a><div class="nav-right">
+    <button class="nav-btn" id="musicButton" aria-label="Toggle birthday music" title="Birthday music">♫</button>
+    <button class="nav-btn" id="themeButton" aria-label="Toggle dark mode" title="Change theme">☾</button>
+</div>
+
+</nav><header class="hero" id="home">
+    <div class="hero-content">    <!-- Your requested phrase is placed at the very top -->
+    <div class="chikoura-name">✨ chikoura marwa ✨</div>
+
+    <div class="eyebrow">A little website made with love</div>
+
+    <h1>Happy Birthday,<br><em>Marwa</em></h1>
+
+    <p class="hero-description">
+        Today is all about celebrating you, your beautiful soul,
+        your lovely smile, and all the wonderful things waiting for you.
+    </p>
+
+    <div class="age-badge">
+        <strong>17</strong>
+        <span>Years of magic</span>
+    </div>
+
+    <a href="#wishes" class="primary-btn">
+        Begin the celebration <span>♡</span>
+    </a>
+</div>
+
+<div class="scroll-hint">SCROLL TO DISCOVER ↓</div>
+
+</header><main><section class="wishes-section" id="wishes">
+    <div class="section-heading reveal">
+        <div class="small-title">A few wishes for you</div>
+        <h2>For your <em>beautiful</em> new chapter</h2>
+        <p>
+            Seventeen is a new page in your story.
+            May it be filled with moments worth remembering.
+            Tap each card to reveal a little birthday wish.
+        </p>
+    </div><div class="wish-grid">
+    <article class="wish-card reveal" data-title="Endless Happiness" data-message="May your days be filled with genuine laughter, peaceful moments, unexpected good news, and the kind of happiness that stays even after the day ends.">
+        <div class="icon">🌷</div>
+        <h3>Endless Happiness</h3>
+        <p>May your smile always find a reason to shine.</p>
+        <span class="tap">TAP TO OPEN ✦</span>
+    </article>
+
+    <article class="wish-card reveal" data-title="Beautiful Dreams" data-message="Never be afraid to dream big, Marwa. You have a whole world ahead of you, and I hope you find the courage to chase every dream that makes your heart feel alive.">
+        <div class="icon">✨</div>
+        <h3>Beautiful Dreams</h3>
+        <p>May every little dream bring you closer to something wonderful.</p>
+        <span class="tap">TAP TO OPEN ✦</span>
+    </article>
+
+    <article class="wish-card reveal" data-title="True Love & Peace" data-message="May you always be surrounded by people who respect you, appreciate your presence, celebrate your successes, and remind you how special you are.">
+        <div class="icon">♡</div>
+        <h3>Love & Peace</h3>
+        <p>May your heart always feel safe, loved, and understood.</p>
+        <span class="tap">TAP TO OPEN ✦</span>
+    </article>
+</div>
+
+</section><section class="cake-section" id="cake">
+    <div class="section-heading reveal">
+        <div class="small-title">Make a wish</div>
+        <h2>A little cake, <em>just for you</em></h2>
+        <p>
+            Close your eyes for a second, think of something beautiful,
+            and tap the candle to blow it out.
+        </p>
+    </div><div class="cake reveal" role="img" aria-label="A pink birthday cake with a candle">
+    <div class="flame" id="flame" title="Tap to blow out the candle"></div>
+    <div class="candle" id="candle" title="Tap to blow out the candle"></div>
+    <div class="cake-top"></div>
+    <div class="cake-bottom"></div>
+    <div class="cake-plate"></div>
+</div>
+
+<p class="cake-instruction" id="cakeInstruction">
+    Tap the flame and let your birthday wish fly into the universe. ✨
+</p>
+
+<button class="primary-btn" id="relightButton" style="margin-top:22px; display:none;">
+    Light the candle again 🕯️
+</button>
+
+</section><section class="letter-section" id="letter">
+    <div class="section-heading reveal">
+        <div class="small-title">A little note</div>
+        <h2>Words from the <em>heart</em></h2>
+        <p>Some things deserve to be said on a special day.</p>
+    </div><article class="letter reveal">
+    <div class="letter-label">A birthday letter · 01</div>
+
+    <h3>Dear Marwa, ♡</h3>
+
+    <p>
+        Happy 17th birthday to someone who deserves so many beautiful
+        things in life. Today is a reminder that a new chapter is
+        beginning, full of possibilities, discoveries, and memories
+        you have not made yet.
+    </p>
+
+    <p>
+        I hope this year brings you closer to the person you want to
+        become. I hope you laugh until your cheeks hurt, find beauty
+        in the smallest things, and always remember that you deserve
+        kindness, respect, and genuine happiness.
+    </p>
+
+    <p>
+        When life feels difficult, I hope you find the strength to
+        keep going. When things are wonderful, I hope you let yourself
+        enjoy every second. And whatever this year brings, may it
+        leave you with a heart full of memories worth keeping.
+    </p>
+
+    <p>
+        Keep being yourself, keep dreaming, and never forget that
+        seventeen is only the beginning of so many wonderful things.
+    </p>
+
+    <p>
+        May your birthday be as lovely as the happiness you bring
+        into the world. You deserve a day filled with warmth,
+        sweet surprises, and countless reasons to smile.
+    </p>
+
+    <div class="signature">With love, always ♡</div>
+</article>
+
+</section><section class="surprise-section" id="surprise">
+    <div class="section-heading reveal">
+        <div class="small-title">A little surprise</div>
+        <h2>Your personal <em>fortune</em></h2>
+        <p>Press the button and let the universe send you a little message.</p>
+    </div><div class="surprise-box reveal">
+    <div class="star">✧</div>
+    <p id="randomWish">
+        Something beautiful is waiting for you. Are you ready?
+    </p>
+    <button class="primary-btn" id="wishButton">Reveal my wish ✨</button>
+</div>
+
+</section><section class="guestbook-section" id="guestbook">
+    <div class="section-heading reveal">
+        <div class="small-title">Leave a little love</div>
+        <h2>A page full of <em>memories</em></h2>
+        <p>
+            Write a birthday message for Marwa.
+            Your message will appear below on this device.
+        </p>
+    </div><div class="guestbook reveal">
+    <form id="guestForm">
+        <input
+            type="text"
+            id="guestName"
+            maxlength="40"
+            placeholder="Your name..."
+            aria-label="Your name"
+            required
+        >
+
+        <textarea
+            id="guestText"
+            maxlength="500"
+            placeholder="Write a little birthday message..."
+            aria-label="Birthday message"
+            required
+        ></textarea>
+
+        <button class="primary-btn" type="submit">
+            Leave some love ♡
+        </button>
+    </form>
+
+    <div class="guest-messages" id="guestMessages"></div>
+</div>
+
+</section><section class="final-section" id="final">
+    <div class="final-heart">💗</div><h2>Keep shining,<br><em>Marwa.</em></h2>
+
+<p>
+    May 17 be the year you discover new strengths, create unforgettable
+    memories, and find a thousand new reasons to love life.
+    This is your chapter. Make it beautiful.
+</p>
+
+<button class="primary-btn" id="celebrateButton">
+    One last surprise 🎉
+</button>
+
+</section></main><footer>
+    Made with <span>♥</span> for Marwa's 17th birthday · ✨ chikoura marwa ✨
+</footer><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+        <button class="close-modal" id="closeModal" aria-label="Close">×</button>
+        <div class="modal-icon" id="modalIcon">💗</div>
+        <h3 id="modalTitle">A little surprise</h3>
+        <p id="modalMessage"></p>
+        <button class="primary-btn" id="modalOkay">Aww, thank you ♡</button>
+    </div>
+</div><script>
+/* Floating sparkles */
+const particleContainer = document.getElementById('particles');
+const sparkleSymbols = ['✦', '♡', '✧', '✨', '·'];
+
+function createSparkle() {
+    const sparkle = document.createElement('span');
+    sparkle.className = 'sparkle';
+    sparkle.textContent = sparkleSymbols[
+        Math.floor(Math.random() * sparkleSymbols.length)
+    ];
+
+    sparkle.style.left = Math.random() * 100 + '%';
+    sparkle.style.fontSize = (10 + Math.random() * 18) + 'px';
+    sparkle.style.animationDuration = (7 + Math.random() * 9) + 's';
+
+    particleContainer.appendChild(sparkle);
+
+    setTimeout(() => sparkle.remove(), 17000);
+}
+
+for (let i = 0; i < 16; i++) {
+    setTimeout(createSparkle, i * 250);
+}
+
+setInterval(createSparkle, 800);
+
+/* Reveal sections on scroll */
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(element => {
+    revealObserver.observe(element);
+});
+
+/* Modal controls */
+const modal = document.getElementById('modal');
+const modalTitle = document.getElementById('modalTitle');
+const modalMessage = document.getElementById('modalMessage');
+const modalIcon = document.getElementById('modalIcon');
+
+function showModal(title, message, icon = '💗') {
+    modalTitle.textContent = title;
+    modalMessage.textContent = message;
+    modalIcon.textContent = icon;
+    modal.classList.add('show');
+}
+
+function closeModal() {
+    modal.classList.remove('show');
+}
+
+document.getElementById('closeModal').addEventListener('click', closeModal);
+document.getElementById('modalOkay').addEventListener('click', closeModal);
+
+modal.addEventListener('click', event => {
+    if (event.target === modal) closeModal();
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeModal();
+});
+
+/* Interactive wish cards */
+document.querySelectorAll('.wish-card').forEach(card => {
+    card.addEventListener('click', () => {
+        showModal(
+            card.dataset.title,
+            card.dataset.message,
+            card.querySelector('.icon').textContent
+        );
+    });
+});
+
+/* Birthday cake candle */
+const flame = document.getElementById('flame');
+const candle = document.getElementById('candle');
+const cakeInstruction = document.getElementById('cakeInstruction');
+const relightButton = document.getElementById('relightButton');
+
+function blowOutCandle() {
+    if (flame.classList.contains('off')) return;
+
+    flame.classList.add('off');
+
+    cakeInstruction.textContent =
+        'Your wish is on its way, Marwa. May something wonderful come true! ✨';
+
+    relightButton.style.display = 'inline-flex';
+
+    launchConfetti(90);
+
+    showModal(
+        'Your wish is sent! ✨',
+        'May your sweetest birthday wish find its way to you. Happy 17th birthday, Marwa!',
+        '🕯️'
+    );
+}
+
+flame.addEventListener('click', blowOutCandle);
+candle.addEventListener('click', blowOutCandle);
+
+relightButton.addEventListener('click', () => {
+    flame.classList.remove('off');
+    cakeInstruction.textContent =
+        'The candle is glowing again. Make another wish, Marwa! ✨';
+    relightButton.style.display = 'none';
+});
+
+/* Random birthday wishes */
+const birthdayWishes = [
+    'May you always find a reason to smile, even on ordinary days. 🌷',
+    'Your best memories are still waiting to be made. ✨',
+    'May this year bring you unexpected happiness and beautiful surprises. 🎀',
+    'Never make yourself smaller to fit into a world you were born to brighten. ♡',
+    'May your heart stay soft, your dreams stay big, and your courage stay strong. 🌙',
+    'You deserve the kind of happiness that feels peaceful and real. 💗',
+    'May every new chapter bring you closer to your dreams. 🦋',
+    'Seventeen looks beautiful on you. The best is yet to come. 🎂',
+    'May you always be surrounded by people who appreciate the real you. 🌸',
+    'Remember: you are allowed to grow, change, and become everything you dream of. ✧'
+];
+
+let previousWish = -1;
+
+document.getElementById('wishButton').addEventListener('click', () => {
+    let index;
+
+    do {
+        index = Math.floor(Math.random() * birthdayWishes.length);
+    } while (index === previousWish && birthdayWishes.length > 1);
+
+    previousWish = index;
+
+    const wishElement = document.getElementById('randomWish');
+
+    wishElement.style.opacity = '0';
+
+    setTimeout(() => {
+        wishElement.textContent = birthdayWishes[index];
+        wishElement.style.opacity = '1';
+    }, 180);
+
+    wishElement.style.transition = 'opacity .25s';
+});
+
+/* Guestbook saved locally on this device */
+const guestForm = document.getElementById('guestForm');
+const guestMessages = document.getElementById('guestMessages');
+
+function getSavedMessages() {
+    try {
+        return JSON.parse(localStorage.getItem('marwaBirthdayMessages') || '[]');
+    } catch {
+        return [];
+    }
+}
+
+function renderMessages() {
+    guestMessages.replaceChildren();
+
+    const messages = getSavedMessages();
+
+    messages.slice().reverse().forEach(message => {
+        const article = document.createElement('article');
+        article.className = 'guest-message';
+
+        const name = document.createElement('strong');
+        name.textContent = message.name;
+
+        const text = document.createElement('p');
+        text.textContent = message.text;
+
+        article.append(name, text);
+        guestMessages.appendChild(article);
+    });
+}
+
+guestForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const name = document.getElementById('guestName').value.trim();
+    const text = document.getElementById('guestText').value.trim();
+
+    if (!name || !text) return;
+
+    const messages = getSavedMessages();
+
+    messages.push({
+        name: name.slice(0, 40),
+        text: text.slice(0, 500)
+    });
+
+    try {
+        localStorage.setItem(
+            'marwaBirthdayMessages',
+            JSON.stringify(messages.slice(-50))
+        );
+
+        renderMessages();
+        guestForm.reset();
+
+        showModal(
+            'Message saved! 💌',
+            'Your birthday message has been added to this page on this device. Thank you for leaving Marwa some love!',
+            '💌'
+        );
+    } catch {
+        showModal(
+            'A little problem',
+            'Your browser could not save the message. You can still send your birthday wishes to Marwa directly!',
+            '🌷'
+        );
+    }
+});
+
+renderMessages();
+
+/* Confetti */
+function launchConfetti(amount = 100) {
+    const colors = ['#e99ab7', '#bd527c', '#f8d7e5', '#f5c76b', '#ffffff'];
+
+    for (let i = 0; i < amount; i++) {
+        const piece = document.createElement('div');
+
+        piece.style.position = 'fixed';
+        piece.style.top = '-15px';
+        piece.style.left = Math.random() * 100 + 'vw';
+        piece.style.width = (5 + Math.random() * 8) + 'px';
+        piece.style.height = (8 + Math.random() * 10) + 'px';
+        piece.style.background = colors[
+            Math.floor(Math.random() * colors.length)
+        ];
+        piece.style.borderRadius = Math.random() > .5 ? '50%' : '2px';
+        piece.style.zIndex = '200';
+        piece.style.pointerEvents = 'none';
+
+        document.body.appendChild(piece);
+
+        const duration = 2200 + Math.random() * 2600;
+
+        const animation = piece.animate([
+            {
+                transform: 'translate3d(0, 0, 0) rotate(0deg)',
+                opacity: 1
+            },
+            {
+                transform:
+                    `translate3d(${(Math.random() - .5) * 240}px, 110vh, 0) rotate(${Math.random() * 900}deg)`,
+                opacity: .1
+            }
+        ], {
+            duration: duration,
+            easing: 'cubic-bezier(.2,.7,.3,1)'
+        });
+
+        animation.onfinish = () => piece.remove();
+    }
+}
+
+/* Final surprise */
+document.getElementById('celebrateButton').addEventListener('click', () => {
+    launchConfetti(180);
+
+    showModal(
+        'Happy 17th Birthday, Marwa! 🎂',
+        '✨ chikoura marwa ✨ — May your life be full of love, laughter, beautiful dreams, and unforgettable moments. Keep shining, birthday girl! 💗',
+        '🎉'
+    );
+});
+
+/* Dark mode */
+const themeButton = document.getElementById('themeButton');
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+    const dark = document.body.classList.contains('dark');
+
+    themeButton.textContent = dark ? '☀' : '☾';
+    themeButton.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
+});
+
+/* Optional birthday music.
+   Browsers require a user interaction before playing audio. */
+let audioContext = null;
+let musicPlaying = false;
+let musicTimer = null;
+let noteIndex = 0;
+
+const melody = [
+    [523.25, 300], [523.25, 300], [587.33, 600],
+    [523.25, 600], [698.46, 600], [659.25, 1000],
+    [523.25, 300], [523.25, 300], [587.33, 600],
+    [523.25, 600], [783.99, 600], [698.46, 1000]
+];
+
+function playNote(frequency, duration) {
+    if (!audioContext) return;
+
+    const oscillator = audioContext.createOscillator();
+    const gain = audioContext.createGain();
+
+    oscillator.type = 'sine';
+    oscillator.frequency.value = frequency;
+
+    gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.09, audioContext.currentTime + .03);
+    gain.gain.exponentialRampToValueAtTime(
+        0.0001,
+        audioContext.currentTime + duration / 1000
+    );
+
+    oscillator.connect(gain);
+    gain.connect(audioContext.destination);
+
+    oscillator.start();
+    oscillator.stop(audioContext.currentTime + duration / 1000 + .04);
+}
+
+function playMelody() {
+    if (!musicPlaying) return;
+
+    const [frequency, duration] = melody[noteIndex];
+
+    playNote(frequency, duration);
+
+    noteIndex = (noteIndex + 1) % melody.length;
+
+    musicTimer = setTimeout(playMelody, duration + 100);
+}
+
+document.getElementById('musicButton').addEventListener('click', async () => {
+    const button = document.getElementById('musicButton');
+
+    if (!audioContext) {
+        const AudioContextClass =
+            window.AudioContext || window.webkitAudioContext;
+
+        if (!AudioContextClass) {
+            showModal(
+                'Music unavailable',
+                'This browser does not support the built-in music feature.',
+                '♫'
+            );
+            return;
+        }
+
+        audioContext = new AudioContextClass();
+    }
+
+    if (audioContext.state === 'suspended') {
+        await audioContext.resume();
+    }
+
+    musicPlaying = !musicPlaying;
+
+    if (musicPlaying) {
+        button.textContent = 'Ⅱ';
+        playMelody();
+    } else {
+        button.textContent = '♫';
+        clearTimeout(musicTimer);
+    }
+});
+</script></body>
+  </html>
